@@ -1,0 +1,26 @@
+% Author block
+$if(author)$
+\IfFileExists{authblk.sty}{%
+  \usepackage[$for(author-options)$$author-options$$endfor$]{authblk}%
+  \renewcommand\Affilfont{$if(affilfont)$$affilfont$$else$\itshape\small$endif$}
+  \renewcommand\Authfont{$if(authfont)$$authfont$$endif$}
+$for(author)$
+$if(author.id)$
+  \author[$author.id$]{$author.name$}
+$else$
+  \author{$author$}
+$endif$
+$endfor$
+$for(affiliation)$
+$if(affiliation.id)$
+  \affil[$affiliation.id$]{$affiliation.name$}
+$else$
+  \affil{$affiliation$}
+$endif$
+$endfor$
+}{
+$for(author)$
+  \author{$author$}
+$endfor$
+}
+$endif$

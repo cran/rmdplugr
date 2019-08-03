@@ -1,0 +1,3 @@
+\IfFileExists{subfig.sty}{%
+  \usepackage{subfig}%
+}{}

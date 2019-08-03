@@ -1,0 +1,23 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author:
+  - name: "First Author"
+affiliation: "Affiliation"
+date: "`r Sys.Date()`"
+header: true
+output: rmdplugr::pdf_article
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  dev = "pdf",
+  dev.args = list(pointsize = 8)
+)
+
+options(digits = 3)
+```
+
+# Introduction
+
