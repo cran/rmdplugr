@@ -14,8 +14,17 @@ Formats for R Markdown that undo modifications by
     around plugins that modify the default 'pandoc' template without relying on 
     custom templates.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jolars/rmdplugr}
+  \item \url{https://jolars.github.io/rmdplugr/}
+  \item Report bugs at \url{https://github.com/jolars/rmdplugr/issues}
+}
+
+}
 \author{
-\strong{Maintainer}: Johan Larsson \email{johanlarsson@outlook.com} (0000-0002-4029-5945)
+\strong{Maintainer}: Johan Larsson \email{johanlarsson@outlook.com} (\href{https://orcid.org/0000-0002-4029-5945}{ORCID})
 
 }
 \keyword{internal}
